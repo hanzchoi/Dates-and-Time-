@@ -8,3 +8,13 @@
 import datetime
 
 
+def to_string(datetime_object):
+    return datetime_object.strftime("%d %B %Y")
+
+
+# Create a new function named from_string that takes two arguments:
+# a date as a string and an strftime-compatible format string,
+# and returns a datetime created from them.
+
+def from_string(arg1, arg2):
+    return datetime.datetime.strptime(arg1, arg2)
